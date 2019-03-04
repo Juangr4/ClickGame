@@ -1,0 +1,100 @@
+* {
+    background: #6f6;
+}
+
+.girar {
+    visibility: hidden;
+    background: #fff;
+}
+
+
+/*INICIO*/
+.inicio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: 1;
+}
+
+.inicio .menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.menu input {
+    padding: 5px;
+    margin-right: 1px;
+    color: #008;
+}
+
+.menu button {
+    padding: 5px;
+    border: 2px solid #fff;
+}
+
+.menu button:hover {
+    padding: 5px;
+    border: 2px solid #00f;
+    background: #008;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*CONTENT*/
+.content {
+    width: 100%;
+    height: auto;
+}
+
+.juego {
+    width: 100%;
+    height: 1vh;
+}
+
+.juego h1 {
+    text-align: center;
+    
+}
+
+.juego .centrar {
+    text-align: center;
+}
+
+.juego canvas {
+    border: 2px solid #000;
+    width: 600px;
+    height: 300px;
+}
+
+.juego button {
+    background: #66f;
+    padding: 5px;
+    border: 1px solid #009;
+    margin: 10px;
+}
+
+.juego button:hover {
+    cursor: pointer;
+}
+
+
+/*FORZANDO POSICION*/
+@media only screen and (orientation:portrait) {
+    
+    .girar {
+        visibility: visible;
+    }
+    
+    .inicio {
+        visibility: hidden;
+    }
+    
+    .content {
+        visibility: hidden;
+    }
+}

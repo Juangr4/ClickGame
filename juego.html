@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>ClickGame</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="aspecto.css">
+        <script src="jquery.js"></script>
+        <script src="inicio.js"></script>
+        <script src="game.js"></script>
+    </head>
+    <body onload="cargar()">
+        <div class="girar"><h1>Por favor ponga su dispositivo en posición horizontal</h1></div>
+        
+        <div class="inicio"><div class="menu"><input type="text" id="nombre" placeholder="Nombre"><button id="inicio" onclick="iniciar()">start</button></div></div>
+        
+        <div class="content">
+            <div class="juego"><h1>ClickGame</h1>
+            <div class="centrar"><canvas id="canvas"></canvas><br><button onclick="restart()">Restart</button></div></div>
+        </div>
+    </body>
+</html>
