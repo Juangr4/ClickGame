@@ -1,4 +1,4 @@
-$(document).ready(function(){
+﻿$(document).ready(function(){
     $('.content').hide();
 })
 //INICIO
@@ -23,7 +23,7 @@ var visual = 5;
 
 var tamaño = 50;
 var puntaje = {x: 200, y: 200, tamaño: 150};
-var objeto = {x: 0, y: puntaje.y + visual, velocidad: 50, sentido: true, tamaño: 50};
+var objeto = {x: 0, y: puntaje.y + visual, velocidad: 5, sentido: true, tamaño: 50};
 
 var jugando = false;
 var vidas = 4;
@@ -130,7 +130,7 @@ function restart(){
     vidas = 3;
     puntos = 0;
     puntaje = {x: 200, y: 200, tamaño: 150};
-    objeto = {x: 0, y: puntaje.y + visual, velocidad: 50, sentido: true, tamaño: 50};
+    objeto = {x: 0, y: puntaje.y + visual, velocidad: 5, sentido: true, tamaño: 50};
     jugando = true;
 }
 
