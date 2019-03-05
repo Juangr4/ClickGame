@@ -1,6 +1,12 @@
 ﻿$(document).ready(function(){
     $('.content').hide();
 })
+
+document.addEventListener('keydown', function(){
+    if(jugando == true){
+        comprobar();
+    }
+}, false);
 //INICIO
 
 var nombre;
