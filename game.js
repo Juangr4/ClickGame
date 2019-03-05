@@ -135,6 +135,39 @@ function restart(){
 }
 
 
+//DIFICULTAD
+function dificultad(){
+    if(puntos > 9){
+        objeto.velocidad = 10;
+    }
+    if(puntos > 19){
+        objeto.velocidad = 20;
+    }
+    if(puntos > 29){
+        objeto.velocidad = 5;
+        puntaje.tamaño = 100;
+    }
+    if(puntos > 39){
+        objeto.velocidad = 10;
+        puntaje.tamaño = 100;
+    }
+    if(puntos > 49){
+        objeto.velocidad = 20;
+        puntaje.tamaño = 100;
+    }
+    if(puntos > 79){
+        objeto.velocidad = 10;
+        puntaje.tamaño = 80;
+    }
+    if(puntos > 89){
+        objeto.velocidad = 20;
+        puntaje.tamaño = 80;
+    }
+    if(puntos > 100){
+        objeto.velocidad = 30;
+        puntaje.tamaño = 80;
+    }
+}
 
 
 
@@ -147,7 +180,7 @@ setInterval(function(){
         borrar();
         dibujar();
         movimiento();
-        
+        dificultad();
         if(vidas<= 0){
             jugando = false;
         }
